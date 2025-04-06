@@ -18,7 +18,7 @@ improved_data = pd.DataFrame({
 products_database = improved_data.groupby(["product"]).sum() #elementar dataframe 01
 
 salesmen_data = pd.DataFrame({
-    "salesman":salesmen,
+    "salesman": salesmen,
     "amount": amount
 })
 
