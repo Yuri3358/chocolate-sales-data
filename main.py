@@ -38,4 +38,12 @@ dashboard = pd.DataFrame({
     "best sale": [most_valuable_sale.loc[0, "product"]]
 })
 
-print(dashboard)
+
+def show_data(datatype):
+    match datatype:
+        case "top":
+            return dashboard
+        case "salesmen":
+            return salesmen_database
+        case "products":
+            return products_database
